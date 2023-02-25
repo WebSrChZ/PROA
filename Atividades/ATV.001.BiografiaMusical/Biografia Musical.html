@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+     <meta charset="UTF-8"> <!-- Informacoes de uso de caracteres -->
+
+     <!-- Titulo da pagina --> <title>
+      Biografia Musical
+     </title> 
+
+     <style> /* Informacoes de estilizacao do site */
+      body {
+        
+      }
+
+      video { /* Personalizacao do video background */
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      }
+
+      .VideoContainer { /* Balao de conteudo de video */
+        width: 80%;
+        margin: 40px auto;
+        text-align: justify;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px #ccc;
+        justify-content: center;
+      }
+
+      .hidden { /* Esconder conteudo do site */
+        display: none;
+      }
+
+     .section { /* Balao de conteudo do site */
+        width: 80%;
+        margin: 40px auto;
+        text-align: justify;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px #ccc;
+        justify-content: center;
+      }
+
+      h2 { /* Titulo */
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      .music { /* Informacoes da musica */
+        font-style: italic;
+        text-align: right;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      audio { /* Personalizacao dos arquivos de audio */
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .image-grid { /* Informacoes de personalizacao de quadro de imagem */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .image-grid img { /* Informacoes de personalizacao de imagem */
+        width: 30%;
+        margin: 10px;
+        border-radius: 10%;
+      }
+     </style>
+  </head>
+
+  <body>
+    <video id="Background" autoplay loop muted> <!--Background Video-->
+        <source src="INTJ Moment.mp4" type="video/mp4">
+    </video>
+
+    <div id="Esconder"> <!--Esconder Video-->
+        <div class="VideoContainer"> <!-- Balao de video -->
+            <h2>Esse video me representa em inteira fracao:</h2>
+
+            <video id="Apresentacao" src="INTJ SUPREMACY.mp4" controls></video>
+        </div>
+    </div>
+
+    <div id="Site" class="hidden"> <!-- Conteúdo do site aqui -->
+      <div class="section"><!--Foco em seus-->
+         <h2>Secao de conteudo 01</h2>
+
+         <p class="music">Música: "Eye of the Tiger" de Survivor</p>
+
+         <audio controls>
+             <source src="INTJ song.mp3" type="audio/mpeg">
+         </audio>
+
+          <p>
+             Essa e a secao de conteudo 01.
+          </p>
+      </div>
+  
+      <div class="section"><!--Confianca em suas decisoes-->
+         <h2>Secao de conteudo 02</h2>
+
+         <p class="music">Música: "Don't Stop Believin'" do Journey</p>
+
+         <audio controls>
+             <source src="https://example.com/dont-stop-believin.mp3" type="audio/mpeg">
+         </audio>
+
+         <p>
+             Essa e a secao de conteudo 02.
+         </p>
+      </div>
+  
+      <div class="section"> <!--INtj e os memes-->
+         <h2>Secao de conteudo 03</h2>
+
+         <p class="music">Música: "I Can Has Cheezburger?" de danoSongs</p>
+
+         <audio controls>
+             <source src="https://example.com/i-can-has-cheezburger.mp3" type="audio/mpeg">
+         </audio>
+
+         <p>
+             Essa e asecao de conteudo 03:
+         </p>
+         
+        <img src="https://example.com/intj-meme.jpg" alt="INTJ meme" style="width: 100%; margin-top: 20px;">
+      </div>
+  
+      <div class="section"><!--Galeria de imagens INTJ-->
+         <h2>Secao de conteudo 04</h2>
+
+         <p class="music">Música: "Piano Sonata No. 14 in C-Sharp Minor" de Ludwig van Beethoven</p>
+
+         <audio controls>
+             <source src="https://example.com/beethoven-piano-sonata.mp3" type="audio/mpeg">
+         </audio>
+
+         <p>Essa e a secao de conteudo 04.</p>
+      </div>
+
+      <!--<div class="image-grid"><!--Imagens--
+         <p>Aqui está uma seleção de imagens que retratam a personalidade INTJ:</p>
+
+         <img src="INTJ_1.jfif" alt="INTJ image 1">
+         <img src="INTJ...jfif" alt="INTJ image 2">
+         <img src="INTJ...jfif" alt="INTJ image 3">
+      </div> -->
+    </div>
+
+    <script> //Comando de esconder
+        const Apresentacao = document.getElementById('Apresentacao');
+        const Site = document.getElementById('Site');
+    
+        Apresentacao.addEventListener('ended', esconderVideo);
+        Apresentacao.addEventListener('ended', () => {
+          Site.classList.remove('hidden');
+        });
+
+        function esconderVideo() {
+            Esconder.style.display = "none";
+        }
+    </script>
+  </body>
+  
+</html>  
