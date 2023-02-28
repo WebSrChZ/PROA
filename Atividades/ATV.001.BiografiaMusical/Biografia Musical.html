@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   <head>
      <meta charset="UTF-8"> <!-- Informacoes de uso de caracteres -->
 
@@ -12,23 +11,12 @@
 
      <meta name="description" content="Biografia Musical de Rafael Santos."> <!-- Descricao -->
 
-
-     <!-- Titulo da pagina --> <title>
-      Biografia Musical
-     </title> 
+     <title>Biografia Musical</title> <!-- Titulo da pagina --> 
 
      <style> /* Informacoes de estilizacao do site */
-      body {
-        
-      }
-
-      video { /* Personalizacao do video background */
-      position: fixed;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
-      z-index: -1;
+      body { /* Estilizacao do corpo do site */
+       background:url(INTJ_1.jfif) ;
+       background-size: cover;
       }
 
       .VideoContainer { /* Balao de conteudo de video */
@@ -89,20 +77,18 @@
       }
 
       #Apresentacao{ /*Informacoes de personalizacao do video inicial */
+        width: 100%;
+        height: 100%;
+        z-index: 1;
       }
      </style>
   </head>
-
-  <body>
-    <video id="Background" autoplay loop muted> <!--Background Video-->
-        <source src="INTJ - The Architect.mp4" type="video/mp4">
-    </video>
-
-    <div id="Esconder"> <!--Esconder Video-->
+  <body> <!-- Informacoes corpo do site -->
+    <div id="VideoApresentacao"> <!-- Video Apresentacao -->
         <div class="VideoContainer"> <!-- Balao de video -->
-            <h2>Esse video me representa em inteira fracao:</h2>
+            <h2>Assista a esse video antes de continuar, ele me representa em inteira fracao:</h2>
 
-            <video id="Apresentacao" src="INTJ SUPREMACY.mp4" controls></video>
+            <video id="Apresentacao" src="INTJ.SUPREMACY.mp4" controls></video>
         </div>
     </div>
 
@@ -176,15 +162,9 @@
         const Apresentacao = document.getElementById('Apresentacao');
         const Site = document.getElementById('Site');
     
-        Apresentacao.addEventListener('ended', esconderVideo);
         Apresentacao.addEventListener('ended', () => {
           Site.classList.remove('hidden');
         });
-
-        function esconderVideo() {
-            Esconder.style.display = "none";
-        }
     </script>
   </body>
-  
 </html>  
