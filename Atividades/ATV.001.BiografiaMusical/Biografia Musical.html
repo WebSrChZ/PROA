@@ -1,27 +1,26 @@
-<!DOCTYPE html>
 <html>
+
   <head>
-     <meta charset="UTF-8"> <!-- Informacoes de uso de caracteres -->
+  
+    <meta charset="UTF-8"> <!-- Informacoes de uso de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Implementacao de novas unidades de medida -->
+    <meta name="keywords" content="HTML, Biografia Musicasal, INTJ"> <!-- Palavras chave -->
+    <meta name="author" content="WebSrChZ"> <!-- Autor -->
+    <meta name="description" content="Biografia Musicasal de Rafael Santos."> <!-- Descricao -->
 
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Implementacao de novas unidades de medida -->
+    <title>Biografia Musicasal</title> <!-- Titulo da pagina --> 
 
-     <meta name="keywords" content="HTML, Biografia Musical, INTJ"> <!-- Palavras chave -->
+    <style> /* Informacoes de estilizacao do site */
 
-     <meta name="author" content="WebSrChZ"> <!-- Autor -->
-
-     <meta name="description" content="Biografia Musical de Rafael Santos."> <!-- Descricao -->
-
-     <title>Biografia Musical</title> <!-- Titulo da pagina --> 
-
-     <style> /* Informacoes de estilizacao do site */
       body { /* Estilizacao do corpo do site */
-       background:url(INTJGIf.gif) ;
-       background-size: cover;
+        background:url(INTJGIf.gif) ;
+        background-size: cover;
+        backdrop-filter: blur(10px);
       }
 
-      .VideoContainer { /* Balao de conteudo de video */
-        width: 80%;
-        margin: 40px auto;
+      .BalaoSite { /* Balao de conteudo do site */
+        width: 80vw;
+        margin: 30px auto;
         text-align: justify;
         padding: 20px;
         background-color: #f2f2f2;
@@ -30,73 +29,86 @@
         justify-content: center;
       }
 
-      .hidden { /* Esconder conteudo do site */
+      .BalaoVideo { /* Balao de conteudo de video */
+        width: 80vw;
+        height: 80vh;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px #ccc;
+      }
+      
+      .ConfiguracaoVideo{ /* Configuracao do video */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Horizontal */
+        justify-content: center; /* Vertical */
+        margin-top: 30px;
+      }
+
+      #VideoApresentacao{ /*Informacoes de personalizacao do video apresentacao */
+        max-width: 40vw;
+        height: auto;
+      }
+
+      .EsconderSite { /* EsconderSite conteudo do site */
         display: none;
       }
 
-     .section { /* Balao de conteudo do site */
-        width: 80%;
-        margin: 40px auto;
-        text-align: justify;
-        padding: 20px;
-        background-color: #f2f2f2;
-        border-radius: 20px;
-        box-shadow: 0px 0px 10px #ccc;
-        justify-content: center;
-      }
-
-      h2 { /* Titulo */
+      h2 { /* Informacoes do titulo */
+        display: flex;
         text-align: center;
+        justify-content:start;
         font-size: 36px;
         margin-bottom: 20px;
       }
 
-      .music { /* Informacoes da musica */
+      .Musicas { /* Informacoes das Musicas */
         font-style: italic;
         text-align: right;
         font-size: 14px;
-        margin-top: 10px;
+        margin-top: 30px;
       }
 
       audio { /* Personalizacao dos arquivos de audio */
         width: 100%;
-        margin-top: 20px;
+        margin-top: 0px;
       }
 
-      .image-grid { /* Informacoes de personalizacao de quadro de imagem */
+      .GradeImagens { /* Informacoes de personalizacao do conjunto de imagem */
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin-top: 20px;
       }
 
-      .image-grid img { /* Informacoes de personalizacao de imagem */
+      .GradeImagens img { /* Informacoes de personalizacao da imagem */
         width: 30%;
         margin: 10px;
         border-radius: 10%;
       }
+      
+    </style>
 
-      #Apresentacao{ /*Informacoes de personalizacao do video inicial */
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-      }
-     </style>
   </head>
-  <body> <!-- Informacoes corpo do site -->
-    <div id="VideoApresentacao"> <!-- Video Apresentacao -->
-        <div class="VideoContainer"> <!-- Balao de video -->
-            <h2>Assista a esse video antes de continuar, ele me representa em inteira fracao:</h2>
 
-            <video id="Apresentacao" src="INTJ.SUPREMACY.mp4" controls></video>
+  <body> <!-- Informacoes corpo do site -->
+
+    <div class="BalaoVideo"> <!-- Balao de video -->  
+        <h2>Assista a esse video antes de continuar, ele me representa em inteira fracao:</h2>
+
+        <div class="ConfiguracaoVideo">
+          <video id="VideoApresentacao" src="INTJ.SUPREMACY.mp4" controls></video>
         </div>
     </div>
 
-    <div id="Site" class="hidden"> <!-- Conteúdo do site aqui -->
-      <div class="section"><!--Foco em seus-->
+    <div id="Site" class="EsconderSite"> <!-- Conteúdo do site aqui -->
+
+      <div class="BalaoSite"><!-- Secao 1 -->
          <h2>Secao de conteudo 01</h2>
 
-         <p class="music">Música: "Eye of the Tiger" de Survivor</p>
+         <p class="Musicas">Música: "Eye of the Tiger" de Survivor</p>
 
          <audio controls>
              <source src="INTJ song.mp3" type="audio/mpeg">
@@ -107,40 +119,42 @@
           </p>
       </div>
   
-      <div class="section"><!--Confianca em suas decisoes-->
-         <h2>Secao de conteudo 02</h2>
-
-         <p class="music">Música: "Don't Stop Believin'" do Journey</p>
-
-         <audio controls>
-             <source src="https://example.com/dont-stop-believin.mp3" type="audio/mpeg">
-         </audio>
-
-         <p>
-             Essa e a secao de conteudo 02.
-         </p>
-      </div>
-  
-      <div class="section"> <!--INtj e os memes-->
-         <h2>Secao de conteudo 03</h2>
-
-         <p class="music">Música: "I Can Has Cheezburger?" de danoSongs</p>
-
-         <audio controls>
-             <source src="https://example.com/i-can-has-cheezburger.mp3" type="audio/mpeg">
-         </audio>
-
-         <p>
-             Essa e asecao de conteudo 03:
-         </p>
+      <div class="BalaoSite"><!-- Secao 2 -->
          
-        <img src="https://example.com/intj-meme.jpg" alt="INTJ meme" style="width: 100%; margin-top: 20px;">
+        <h2>Secao de conteudo 02</h2>
+
+        <p class="Musicas">Música: "Don't Stop Believin'" do Journey</p>
+
+        <audio controls>
+          <source src="https://example.com/dont-stop-believin.mp3" type="audio/mpeg">
+        </audio>
+
+        <p>
+          Essa e a secao de conteudo 02.
+        </p>
+
       </div>
   
-      <div class="section"><!--Galeria de imagens INTJ-->
+      <div class="BalaoSite"> <!-- Secao 3 -->
+        
+        <h2>Secao de conteudo 03</h2>
+
+        <p class="Musicas">Música: "I Can Has Cheezburger?" de danoSongs</p>
+
+        <audio controls>
+          <source src="https://example.com/i-can-has-cheezburger.mp3" type="audio/mpeg">
+        </audio>
+
+        <p>
+          Essa e asecao de conteudo 03:
+        </p>
+
+      </div>
+  
+      <div class="BalaoSite"><!-- Secao 4 -->
          <h2>Secao de conteudo 04</h2>
 
-         <p class="music">Música: "Piano Sonata No. 14 in C-Sharp Minor" de Ludwig van Beethoven</p>
+         <p class="Musicas">Música: "Piano Sonata No. 14 in C-Sharp Minor" de Ludwig van Beethoven</p>
 
          <audio controls>
              <source src="https://example.com/beethoven-piano-sonata.mp3" type="audio/mpeg">
@@ -149,22 +163,32 @@
          <p>Essa e a secao de conteudo 04.</p>
       </div>
 
-      <!--<div class="image-grid"><!--Imagens--
-          <p>Aqui está uma seleção de imagens que retratam a personalidade INTJ:</p>
+      <div class="BalaoSite"><!-- Galeria de imagens INTJ -->
+        <h2>Secao de imagens</h2>
+
+        <p style="margin-top: 50px;">Aqui está uma seleção de imagens que retratam a personalidade INTJ:</p>
+
+        <div class="GradeImagens"><!--Imagens -->
 
           <img src="INTJ_1.jfif" alt="INTJ image 1">
-          <img src="INTJ...jfif" alt="INTJ image 2">
-          <img src="INTJ...jfif" alt="INTJ image 3">
-      </div>-->
+          <img src="INTJ_1.jfif" alt="INTJ image 2">
+          <img src="INTJ_1.jfif" alt="INTJ image 3">
+  
+        </div>
+
+      </div>
+
     </div>
 
-    <script> //Comando de esconder
-        const Apresentacao = document.getElementById('Apresentacao');
+    <script> //Comando de EsconderSite
+        const VideoApresentacao = document.getElementById('VideoApresentacao');
         const Site = document.getElementById('Site');
     
-        Apresentacao.addEventListener('ended', () => {
-          Site.classList.remove('hidden');
+        VideoApresentacao.addEventListener('ended', () => {
+          Site.classList.remove('EsconderSite');
         });
     </script>
+
   </body>
-</html>  
+
+</html>
