@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="PT">
 
@@ -5,9 +6,9 @@
   
     <meta charset="utf-8"> <!-- Informacoes de uso de caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Implementacao de novas unidades de medida -->
-    <meta name="keywords" content="HTML, Biografia Musicasal, INTJ"> <!-- Palavras chave -->
+    <meta name="keywords" content="HTML, Biografia Descricaoal, INTJ"> <!-- Palavras chave -->
     <meta name="author" content="WebSrChZ"> <!-- Autor -->
-    <meta name="description" content="Biografia Musicasal de Rafael Santos."> <!-- Descricao -->
+    <meta name="description" content="Biografia Descricaoal de Rafael Santos."> <!-- Descricao -->
 
     <title>Biografia Musical - Rafael Santos</title> <!-- Titulo da pagina --> 
 
@@ -21,22 +22,22 @@
 
       .BalaoSite { /* Balao de conteudo do site */
         width: 80vw;
-        max-width: 1268px;
+        max-width: 955.19px;
         margin: 30px auto;
-        padding: 20px;
-        background-color: #f2f2f2;
+        padding: 30px;
+        background-color: #2d2d2d;
         border-radius: 20px;
-        box-shadow: 0px 0px 10px #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.15), 0 0 30px rgba(0, 0, 0, 0.1);
       }
 
       .BalaoVideo { /* Balao de conteudo de video */
         width: 80vw;
-        max-width: 1268px;
+        max-width: 955.19px;
         margin: 30px auto;
-        padding: 20px;
-        background-color: #f2f2f2;
+        padding: 30px;
+        background-color: #151515;
         border-radius: 20px;
-        box-shadow: 0px 0px 10px #ccc;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
       }
       
       .ConfiguracaoVideo{ /* Configuracao do player do video */
@@ -45,6 +46,7 @@
         justify-content: center;
         align-items: center;
         align-self: auto;
+        margin-top: 30px;
       }
 
       #VideoApresentacao{ /*Informacoes de personalizacao do video apresentacao */
@@ -52,7 +54,8 @@
         width: auto;
         max-width: 800px;
         max-width: 100%;
-        border-radius: 5px;
+        border-radius: 5px
+      
       }
 
       .EsconderSite { /* EsconderSite conteudo do site */
@@ -62,19 +65,36 @@
       h2 { /* Informacoes do titulo */
         align-items: center;
         text-align: center;
-        font-size:large;
+        font-size:larger;
+        color: #fff
       }
 
-      .Musicas { /* Informacoes das Musicas */
-        font-style: italic;
-        text-align: right;
-        font-size: small;
-        margin-top: 30px;
+      p { /* Informacoes do paragrafo */
+        margin-top: 20px;
+        color: #d3d3d3;
       }
 
       audio { /* Personalizacao dos arquivos de audio */
         width: 100%;
         margin-top: 0px;
+      }
+
+      .Descricao { /* Informacoes das Descricao */
+        font-style: italic;
+        text-align: right;
+        font-size: medium;
+        margin-top: 30px;
+        color: #d3d3d3;
+      }
+
+      .DescricaoJantar { /* Informacoes da descricao do jantar */
+        display: flex;
+        flex-direction: row;
+        font-style: italic;
+        text-align: right;
+        font-size: medium;
+        margin-top: 30px;
+        color: #d3d3d3;
       }
 
       .GradeImagens { /* Informacoes de personalizacao do conjunto de imagem */
@@ -89,6 +109,18 @@
         margin: 10px;
         border-radius: 10%;
       }
+
+      .ImagemJantar { /* Informacoes das imagens do jantar */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 0px;
+      }
+
+      .ImagemJantar img { /* Informacoes das imagens do jantar */
+        width: 100%;
+        border-radius: 10px;
+      }
       
     </style>
 
@@ -96,7 +128,7 @@
 
   <body> <!-- Informacoes corpo do site -->
 
-    <div class="BalaoVideo"> <!-- Balao de video -->  
+    <div class="BalaoVideo"> <!-- Video Obrigatorio -->  
         <h2>Para prosseguir, parte do meu 'EU' tera de descobrir!</h2>
 
         <div class="ConfiguracaoVideo">
@@ -107,33 +139,71 @@
     <div id="Site" class="EsconderSite"> <!-- Conteúdo do site aqui -->
 
       <div class="BalaoSite"><!-- Secao 1 - Quero ouvir sua historia -->
+        
         <h2>"Quero ouvir sua historia".</h2>
 
-        <p class="Musicas">Obs: As músicas estao listadas na ordem das perguntas.</p>
+        <p class="Descricao">Obs: As músicas estao listadas na ordem das perguntas.</p>
 
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5l0aBVt4GCGuyCGv74eqkH?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5l0aBVt4GCGuyCGv74eqkH?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
       </div>
   
       <div class="BalaoSite"><!-- Secao 2 - Vamos descobrir sobre seu futuro? -->
+        
         <h2>"Vamos descobrir sobre seu futuro?"</h2>
 
-        <p class="Musicas">Obs: As músicas estao listadas na ordem das perguntas.</p>
+        <p class="Descricao">Obs: As músicas estao listadas na ordem das perguntas.</p>
 
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6S6HkiSPiiX4ab9GZEKK9d?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6S6HkiSPiiX4ab9GZEKK9d?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
       </div>
   
       <div class="BalaoSite"> <!-- Secao 3 - Comer e sempre bom... Sempre -->
         
-        <h2>Secao de conteudo 03</h2>
+        <h2>"Comer e sempre bom... Sempre"</h2>
 
-        <p class="Musicas">Música: "I Can Has Cheezburger?" de danoSongs</p>
+        <!-- <p>
+          Bom, a pessoa escolhida ainda nao sabe disso rsrs, estamos trabalhando nossa relacao! Mass... Minha escolha nao vai mudar haha! Ela e minha candidata a esposa!
+        </p> -->
+        
+        <p class="DescricaoJantar">Jantar 01: "Kaiseki japonês". <!-- Jantar 01 - Kaiseki Japones -->
+          <br>Comparada à alta cozinha francesa, a arte do kaiseki é o estilo de culinária mais sofisticado do Japão. Esta cozinha sazonalmente conduzida apresenta legumes e frutos do mar frescos ou preservados, apresentando-os de uma maneira refinada e artística que quase parece boa demais para comer!
+          Servidos em ryokans (pousadas tradicionais) e restaurantes caros, os jantares kaiseki podem contar com mais de 14 pratos, servidos ao longo de horas. O anfitrião serve pequenos pratos delicados, com sabores que aumentam ao longo da refeição.
 
-        <audio controls>
-          <source src="https://example.com/i-can-has-cheezburger.mp3" type="audio/mpeg">
-        </audio>
+          <div class="ImagemJantar">
 
-        <p>
-          Essa e asecao de conteudo 03:
+            <img id="JantarImage" src="https://asianinspirations.com.au/wp-content/uploads/2019/02/Kaiseki-Dining-3-940x627.jpg" alt="The Art of Japanese Kaiseki Dining" title="The Art of Japanese Kaiseki Dining">
+
+          </div>
+
+          <br><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4qAMNYrqwJh3qQBAdyXH2z?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        
+        </p>
+
+        <p class="DescricaoJantar">Jantar 02: "Café Francês". <!-- Jantar 02 - Café Francês -->
+          <br>Na Europa Oriental, o café da manhã é uma refeição substancial, leve  e docinha, tendo destaque em outros países. Podendo incluir frutas, queijos, doces, geleias, bolinhos e pães. Para comer e aproveitar como eles, você deve, primeiro, valorizar o horários da refeição e, passar um tempo na mesa. Embora a vida deles possa ser tão ocupada quanto a nossa, eles arranjam tempo para se sentar e desfrutar da comida, aroveitando cada momento com a sua companhia.
+
+          <div class="ImagemJantar">
+
+            <img id="JantarImage" src="https://worldinparis.com/wp-content/uploads/2021/07/French-Breakfast.jpg" alt="Café da manhã francês" title="Easter breakfast">
+
+          </div>
+
+          <br><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4qAMNYrqwJh3qQBAdyXH2z?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        
+        </p>
+        
+        <p class="DescricaoJantar">Jantar 03: "...". <!-- Jantar 03 - ... -->
+          <br>....
+
+          <div class="ImagemJantar">
+
+            <img id="JantarImage" src="https://asianinspirations.com.au/wp-content/uploads/2019/02/Kaiseki-Dining-3-940x627.jpg" title="The Art of Japanese Kaiseki Dining">
+
+          </div>
+
+          <br><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4qAMNYrqwJh3qQBAdyXH2z?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        
         </p>
 
       </div>
@@ -141,7 +211,7 @@
       <div class="BalaoSite"><!-- Secao 4 -->
          <h2>Secao de conteudo 04</h2>
 
-         <p class="Musicas">Música: "Piano Sonata No. 14 in C-Sharp Minor" de Ludwig van Beethoven</p>
+         <p class="Descricao">Música: "Piano Sonata No. 14 in C-Sharp Minor" de Ludwig van Beethoven</p>
 
          <audio controls>
              <source src="https://example.com/beethoven-piano-sonata.mp3" type="audio/mpeg">
@@ -150,7 +220,7 @@
          <p>Essa e a secao de conteudo 04.</p>
       </div>
 
-      <div class="BalaoSite"><!-- Galeria de imagens INTJ -->
+      <div class="BalaoSite"><!-- Secao 5 -->
         <h2>Secao de imagens</h2>
 
         <p style="margin-top: 50px;">Aqui está uma seleção de imagens que retratam a personalidade INTJ:</p>
@@ -164,6 +234,18 @@
         </div>
 
       </div>
+
+      <div class="BalaoSite"><!-- Secao 6 -->
+        <h2>Secao de conteudo 04</h2>
+
+        <p class="Descricao">Música: "Piano Sonata No. 14 in C-Sharp Minor" de Ludwig van Beethoven</p>
+
+        <audio controls>
+            <source src="https://example.com/beethoven-piano-sonata.mp3" type="audio/mpeg">
+        </audio>
+
+        <p>Essa e a secao de conteudo 04.</p>
+     </div>
 
     </div>
 
