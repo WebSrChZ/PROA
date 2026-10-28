@@ -37,6 +37,9 @@ O que **foi** corrigido, porque gerava erro visível para quem abre as páginas:
 Antes disso, um submódulo git quebrado (`Projeto-Biografia_Musical`) travava o
 build do GitHub Pages desde 2023 — removido, e a landing passou a publicar.
 
+`INTJ-TheArchitect.mp4` (12 MB) saiu em 2026: nenhuma página o usava. O vídeo
+que a Biografia Musical mostra é o `INTJ.SUPREMACY.mp4`, que ficou.
+
 ## Autoria
 
 Conteúdo de autoria de **Rafael Henrique Cordeiro Santos**. Não é Creative
